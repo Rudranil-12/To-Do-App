@@ -16,7 +16,10 @@ function renderTasks() {
     li.dataset.index = index;
 
     li.innerHTML = `
-      <span>${task.text}</span>
+      <div class="task-content">
+        <span>${task.text}</span>
+        <small class="time">⏰ ${task.time}</small>
+      </div>
       <div class="actions">
         <button class="complete" onclick="toggleComplete(${index})">✔</button>
         <button class="delete" onclick="deleteTask(${index})">✖</button>
@@ -39,7 +42,18 @@ function renderTasks() {
 function addTask() {
   const text = taskInput.value.trim();
   if (!text) return;
-  tasks.push({ text, completed: false });
+
+  // Get current date + time
+  const now = new Date();
+  const dateAdded = now.toLocaleDateString("en-GB", { 
+    day: "2-digit", month: "short", year: "numeric" 
+  });
+  const timeAdded = now.toLocaleTimeString([], { 
+    hour: "2-digit", minute: "2-digit" 
+  });
+  const dateTime = `${dateAdded}, ${timeAdded}`;
+
+  tasks.push({ text, completed: false, time: dateTime });
   saveTasks();
   renderTasks();
   taskInput.value = "";

@@ -105,7 +105,8 @@ li.completed {
   opacity: 0.7;
 }
 
-/* Dragging state */
+
+
 li.dragging {
   opacity: 0.4;
   transform: scale(1.05);
@@ -153,4 +154,21 @@ li.dragging {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(15px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+.task-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-content span {
+  font-size: 1rem;
+}
+
+.task-content .time {
+  font-size: 0.75rem;
+  color: #ddd;
+  margin-top: 3px;
 }
