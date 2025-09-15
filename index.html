@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Dynamic To-Do App</title>
+  <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+  <div class="todo-container">
+    <h1>📝 3D To-Do</h1>
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="Add a new task..." />
+      <button onclick="addTask()">➕ Add</button>
+    </div>
+    <ul id="taskList"></ul>
+    <button class="clear-btn" onclick="clearAll()">🗑 Clear All</button>
+  </div>
+  <script src="Todo.js"></script>
+</body>
+</html>
