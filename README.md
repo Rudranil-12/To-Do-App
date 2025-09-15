@@ -5,15 +5,13 @@ This project focuses on creating a visually engaging 3D-style interface with smo
 
 🚀 Features
 
-✅ Add, edit, and delete tasks
+✅ Add, edit, and delete tasks easily.
 
-🎨 3D design with dynamic UI
+🎨 3D design with dynamic UI.    
 
-⚡ Real-time updates using JavaScript
+📱 Responsive design for mobile & desktop.
 
-📱 Responsive design for mobile & desktop
-
-✨ Clean and modern user experience
+✨ Clean and modern user experience.
 
 🛠️ Tech Stack
 
